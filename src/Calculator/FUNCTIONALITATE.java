@@ -18,7 +18,7 @@ public class FUNCTIONALITATE {
 				throw new ArithmeticException("Impartire la 0");
 			}
 			return num1 / num2;
-		default: //posibil sa o fac ca si exceptie dar vad mai incolo
+		default:
 			System.out.println("Operator invalid!");
 			throw new IllegalArgumentException("ILLEGAL" + operator);
 		}
