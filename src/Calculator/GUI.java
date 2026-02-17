@@ -4,19 +4,9 @@ package Tema;
 import javax.swing.BorderFactory;
 import java.awt.Color;
 import java.awt.Font;
-//import java.awt.GradientPaint;
-//import java.awt.Graphics;
-//import java.awt.Graphics2D;
-//import java.awt.Image;
-//import java.awt.RenderingHints;
 import java.awt.event.ActionListener;
-
-//import javax.swing.BoxLayout;
-//import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-//import javax.swing.JLabel;
-//import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class GUI {
@@ -25,21 +15,10 @@ public class GUI {
 		gui.setSize(350,500);
 		
 		gui.setLayout(null);
-//		gui.setLayout(null);
-//		gui.getContentPane().setBackground(new Color(0,0,0,150));
-
 		gui.getContentPane().setBackground(Color.black);
 		
 		
 		TextField(gui);	
-		
-//		gui.getContentPane().setBackground(new Color(0,0,0,150));
-//		ImageIcon image = new ImageIcon("C:\\Users\\andre\\OneDrive\\Desktop\\CalculatorPROIECT\\ZUCKY.jpg");
-//		gui.setIconImage(new ImageIcon("C:\\Users\\andre\\OneDrive\\Desktop\\CalculatorPROIECT\\ZUCKY.jpg").getImage());
-//		JLabel background = new JLabel(image);
-//		background.setBounds(0,0,300,500);
-//		gui.add(background);
-	
 		Butoane(gui);
 	
 		gui.setVisible(true);
@@ -59,17 +38,7 @@ public class GUI {
 	
 	void Butoane(JFrame gui) {
 		
-//		String caractere[] = {
-//				"C", "DEL", "÷",
-//		        "7", "8", "9", "×",
-//		        "4", "5", "6", "−",
-//		        "1", "2", "3", "+",
-//		        "0", ".", "="
-//		};
-		
-//		JButton b[] = new JButton[caractere.length]; //array de butoane
-		
-		// Rândul 0 (C, ⌫, %, ÷)
+		// Rândul 0 (C, DEL, ÷)
 		JButton bC = new JButton("C");
 		bC.setBounds(10, 90, 100, 60);
 		gui.add(bC);
@@ -236,13 +205,8 @@ public class GUI {
 		t = new JTextField();
 		t.setBounds(10,20,310,60);
 		t.setEditable(false); // utilizatorul nu are voie sa scrie in el (DOAR AFISEAZA)
-//		t.setHorizontalAlignment(JTextField.RIGHT); // vreau sa fie aliniat la dreapta - Nu mai vreau ca arata urat 
-		t.setFont(new Font("Arial",Font.BOLD,34)); //evident imi doresc sa am si un font fain
-//		t.setBackground(Color.gray);
-//		t.setBackground(Color.white);
+		t.setFont(new Font("Arial",Font.BOLD,34)); 
 		t.setHorizontalAlignment(JTextField.RIGHT);
-//		t.setBorder(BorderFactory.createLineBorder(Color.white,3));
-		
 		t.setForeground(Color.white);
 		
 		t.setOpaque(false);
@@ -255,4 +219,3 @@ public class GUI {
 	
 }
 
-//De implementat functionalitatile in interfata
