@@ -1,5 +1,5 @@
 # CAULCATOR PROJECT
-# This is a simple Calculator Project designed to get a better understand to the concepts of Graphical User Interface (GUI) development.
+ This is a simple Calculator Project designed to get a better understand to the concepts of Graphical User Interface (GUI) development.
 
 ## Project Structure
 
